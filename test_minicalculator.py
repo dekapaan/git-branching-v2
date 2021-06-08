@@ -13,7 +13,11 @@ class MyTestCase(unittest.TestCase):
 
     def test_multiply(self):
         mini_instance = MiniCalculator()
-        self.assertEqual(mini_instance.multiply(2, 3), 6, "It's stupid, the function can't subtract")
+        self.assertEqual(mini_instance.multiply(2, 3), 6, "It's stupid, the function can't multiply")
+
+    def text_divide(self):
+        mini_instance = MiniCalculator()
+        self.assertEqual(mini_instance.divide(4,2), 2, "It's stupid, the function can't divide")
 
 
 if __name__ == '__main__':
