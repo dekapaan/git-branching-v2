@@ -7,6 +7,10 @@ class MyTestCase(unittest.TestCase):
         mini_instance = MiniCalculator()
         self.assertEqual(mini_instance.add(2, 2), 4, "It's stupid, the function can't add")
 
+    def test_subtract(self):
+        mini_instance = MiniCalculator()
+        self.assertEqual(mini_instance.subtract(2, 2), 0, "It's stupid, the function can't subtract")
+
 
 if __name__ == '__main__':
     unittest.main()
